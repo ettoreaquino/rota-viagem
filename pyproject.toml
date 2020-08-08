@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "rota-viagem-app"
+version = "0.1.0"
+description = "Um app simplificado para rota de menor custo entre aeroportos"
+authors = ["Ettore Aquino <ettore@ettoreaquino.com>"]
+license = "MIT"
+readme = "README.rst"
+keywords = ["Dijkstra",
+            "Python",
+            "Docker",
+            "Test",
+            "Flask"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pylint = "^2.5.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
