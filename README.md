@@ -13,6 +13,9 @@ Já que a aplicação foi dockerizada, inicie o processo obtendo o Docker Image 
 
 Uma vez carregada a imagem inicie a aplicação executando:
 
+### Debuging mode
 ```docker container run -it -p 5000:5000 -e FLASK_APP=src/api.app --rm --name rota-viagem -e FLASK_DEBUG=1 -v $PWD:/app ettoreaquino/rota-viagem```
 
+### Production mode
+```docker container run -it -p 5000:5000 -e FLASK_APP=src/api.app --rm --name rota-viagem ettoreaquino/rota-viagem```
 
